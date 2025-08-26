@@ -3,6 +3,7 @@
 ## Tabla de Contenidos
 - [Descripción](#descripción)
 - [Equipo](#equipo)
+- [Jira](#jira)
 
 ---
 
@@ -17,3 +18,6 @@ Proyecto final para la asignatura de Sistemas Distribuidos. Desarrollado princip
 | Sneider Monroy Quiroga      | Development Team | [Sneider1231](https://github.com/Sneider1231)                     |
 
 ---
+
+## Jira
+Espacio de Jira donde estarán las épicas y los sprints: [Jira RD](https://solitariodevs.atlassian.net/jira/software/projects/RD/summary)
