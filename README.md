@@ -20,4 +20,4 @@ Proyecto final para la asignatura de Sistemas Distribuidos. Desarrollado princip
 ---
 
 ## Jira
-Espacio de Jira donde estarán las épicas y los sprints: [Jira RD](https://solitariodevs.atlassian.net/jira/software/projects/RD/summary)
+Espacio de Jira donde estarán las épicas y los sprints: [Jira RD](https://solitariodevs.atlassian.net/jira/software/projects/RD/summary) 
