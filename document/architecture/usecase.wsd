@@ -1,3 +1,51 @@
 @startuml
+left to right direction
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+
+title Diagrama de Casos de Uso - Aplicativo de Restaurante
+
+actor Owner
+actor Dispositivo
+actor Verificador
+actor Transportador
+
+rectangle "Sistema de Gestión de Pedidos" {
+  usecase "Gestionar Catálogo" as UC1
+  usecase "Gestionar Usuarios y Roles" as UC2
+  usecase "Gestionar Mesas" as UC3
+
+  usecase "Crear Pedido" as UC4
+  usecase "Enviar Pedido a Verificación" as UC5
+
+  usecase "Revisar Pedidos" as UC6
+  usecase "Aprobar Pedido" as UC7
+  usecase "Devolver Pedido" as UC8
+  usecase "Generar Comanda" as UC12
+
+  usecase "Consultar Pedidos Listos" as UC9
+  usecase "Marcar Pedido 'En Camino'" as UC10
+  usecase "Marcar Pedido 'Entregado'" as UC11
+}
+
+' Conexiones de Actores a Casos de Uso
+Owner --> UC1
+Owner --> UC2
+Owner --> UC3
+
+Dispositivo --> UC4
+Dispositivo --> UC5
+
+Verificador --> UC6
+Verificador --> UC7
+Verificador --> UC8
+
+Transportador --> UC9
+Transportador --> UC10
+Transportador --> UC11
+
+' Relaciones entre Casos de Uso
+UC5 ..> UC4 : <<include>>
+UC7 <.. UC12 : <<extend>>
 
 @enduml
