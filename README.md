@@ -1,45 +1,118 @@
-# Laboratory SD - Proyecto Final
+# Sistema de Restaurante – Proyecto Final
 
-## Tabla de Contenidos
-- [Descripción](#descripción)
-- [Equipo](#equipo)
-- [Jira](#jira)
+Repositorio base de documentación para el **sistema de gestión de pedidos de un restaurante de comidas rápidas**.  
+Este repositorio centraliza la visión    general del sistema, su arquitectura distribuida, la organización de la documentación y los enlaces a los repositorios de código.
+
+> **Importante:** Este repositorio **no contiene implementación**, solo documentación, diagramas y referencias para guiar el desarrollo.
+
+---
+
+## Objetivo del Proyecto
+Desarrollar un sistema que permita gestionar de manera eficiente la operación de un restaurante de comidas rápidas, incluyendo:
+
+- Registro y autenticación de usuarios con distintos roles (Administrador, Empleado, Cliente).  
+- Gestión del **catálogo de productos** del restaurante.  
+- Creación y seguimiento de **pedidos** realizados por clientes.  
+- Notificaciones automáticas a los clientes cuando su pedido esté listo.  
+- Administración de mesas y control de pedidos en curso.  
+
+El sistema busca ofrecer:
+
+- Experiencia de usuario fluida para clientes y empleados.  
+- Control completo de la operación del restaurante para el administrador.  
+- Visualización en tiempo real del estado de los pedidos.  
+- Alertas y notificaciones automáticas para mejorar la eficiencia.
 
 ---
 
-## Descripción
-Proyecto final para la asignatura de Sistemas Distribuidos. Desarrollado principalmente en HTML, TypeScript, Java y CSS.
+## Arquitectura Distribuida
+El sistema seguirá un **modelo basado en microservicios**, permitiendo:
 
-## Equipo
-| Nombre                      | Rol en Scrum      | Usuario GitHub                                                    |
-|-----------------------------|------------------|-------------------------------------------------------------------|
-| Victor Andres               | Scrum Master     | [VictorAndres123](https://github.com/VictorAndres123)             |
-| Johan Esteban Ramirez       | Product Owner    | [EstebanRamirezGutierrez](https://github.com/EstebanRamirezGutierrez) |
-| Sneider Monroy Quiroga      | Development Team | [Sneider1231](https://github.com/Sneider1231)                     |
+- Escalabilidad y modularidad.  
+- Mantenimiento sencillo y actualización independiente de cada módulo.  
+- Comunicación eficiente entre servicios mediante API REST y notificaciones.  
+
+> Los diagramas de arquitectura se encuentran en la carpeta `docs/diagrams/`.
 
 ---
+
+## Metodología de Trabajo
+El proyecto se desarrolla bajo **Scrum**, organizado en **épicas** y **sprints semanales**:
+
+- Cada sprint dura **una semana**, permitiendo entregas incrementales.  
+- Las épicas definen los **objetivos principales** del proyecto.  
+- Las historias de usuario (HU) dividen las épicas en funcionalidades manejables.  
+- Cada HU se documenta en este repositorio y se gestiona en **Jira**, asegurando trazabilidad.  <
+
+### Convención de Historias de Usuario (HU-#)
+- HU-001 en adelante: funcionalidades del sistema para el primer sprint  
+- HU-101 en adelante: funcionalidades avanzadas o ajustes  
+
+Cada HU incluirá:
+
+- ID  
+- Descripción  
+- Criterios de aceptación  
+- Enlace a su issue en Jira  
+
+---
+
+## Funcionalidades Principales
+1. **Gestión de Usuarios y Roles**  
+   - Registro y autenticación de clientes, empleados y administradores.  
+   - Asignación de roles con permisos específicos.  
+
+2. **Gestión de Productos y Catálogo**  
+   - Visualización y búsqueda de productos del menú.  
+   - Filtrado por categoría y precios.  
+
+3. **Gestión de Pedidos**  
+   - Creación y seguimiento de pedidos por clientes.  
+   - Actualización del estado del pedido por empleados.  
+
+4. **Notificaciones**  
+   - Envío automático de notificaciones a clientes cuando su pedido está listo.  
+   - Alertas internas para empleados sobre pedidos pendientes.  
+
+5. **Administración de Mesas**  
+   - Control del estado de las mesas (libre, ocupada, en limpieza).  
+   - Asignación de pedidos a mesas específicas.  
+
+6. **Generacion de reportes de ventas**  
+   - Realizar reportes de vendas.  
+
+---
+
+## Gestión del Backlog
+El seguimiento de épicas e historias de usuario se realiza en **Jira** mediante un **tablero Scrum**:
+
+- Organización de épicas e historias de usuario.  
+- Seguimiento de sprints semanales.  
+- Visualización del estado: Pendiente, En progreso, Terminado.  
+- Priorización de tareas según necesidades del restaurante. 
 
 ## Jira
-Espacio de Jira donde estarán las épicas y los sprints: [Jira RD](https://solitariodevs.atlassian.net/jira/software/projects/RD/summary) 
+Espacio de Jira donde estarán las épicas y los sprints: [Enlace al tablero de Jira](https://solitariodevs.atlassian.net/jira/software/projects/RSO/boards/67/backlog?epics=visible&issueParent=10133%2C10140&atlOrigin=eyJpIjoiYjBhYTY2MTRmOWRiNDdlNTk3ZTdkMTAzMmU4MjMwMjMiLCJwIjoiaiJ9)
 
-## Épicas del Proyecto
-RD-1 AUTH & ROLES
-Esta épica se centra en la autenticación y gestión de roles de los usuarios. Incluye funcionalidades esenciales como el inicio y cierre de sesión, la creación de nuevos usuarios y la asignación de roles y permisos específicos para controlar el acceso a distintas partes de la aplicación. Es fundamental para garantizar la seguridad y la correcta operación del sistema, asegurando que cada usuario solo pueda realizar las acciones para las que tiene autorización.
+---
 
-RD-2 CATÁLOGO / MENÚ
-Esta épica abarca el desarrollo y la gestión del catálogo de productos o servicios de la aplicación. Las funcionalidades incluyen la visualización, filtrado y búsqueda de los elementos disponibles. Es la interfaz principal a través de la cual los usuarios exploran y seleccionan lo que necesitan, por lo que su diseño y funcionalidad son clave para una buena experiencia de usuario.
+## Repositorios Relacionados
+| Microservicio          | Repositorio                        | Estado       | Descripción                                           |
+|------------------------|-----------------------------------|-------------|------------------------------------------------------|
+| Eureka Server          | [enlace](#)                       | Pendiente    | Registro y descubrimiento de microservicios         |
+| API Gateway            | [enlace](#)                       | Pendiente    | Enrutamiento centralizado y políticas de seguridad  |
+| Auth Service           | [enlace](#)                       | Pendiente    | Autenticación y autorización con JWT/OAuth2         |
+| Product Service        | [enlace](#)                       | En proceso   | Gestión del catálogo de productos                   |
+| Order Service          | [enlace](#)                       | En proceso   | Creación, seguimiento y actualización de pedidos   |
+| Notification Service   | [enlace](#)                       | Pendiente    | Envío de alertas y notificaciones a clientes       |
+| Table Service          | [enlace](#)                       | Pendiente    | Gestión de mesas y estado de ocupación              |
+| Frontend Web           | [enlace](#)                       | Pendiente    | Interfaz gráfica del sistema                        |
 
-RD-3 PEDIDO – DISPOSITIVO
-Esta épica gestiona todo el proceso relacionado con los pedidos generados por los dispositivos. Las funcionalidades incluyen la creación, seguimiento, y la actualización del estado de un pedido. Su objetivo es asegurar que los dispositivos puedan interactuar de manera eficiente con el sistema para solicitar productos o servicios, y que el estado de su solicitud sea siempre visible y preciso.
+---
 
-RD-4 VERIFICACIÓN
-Esta épica se encarga de los procesos de validación y verificación de la información dentro del sistema. Las funcionalidades incluyen la revisión de la integridad de los datos, la confirmación de la autenticidad de los pedidos, y cualquier otra validación necesaria antes de que un proceso pueda continuar. Es un paso crítico para prevenir errores y asegurar la exactitud de las operaciones.
-
-RD-5 TRANSPORTE A MESA
-Esta épica se enfoca en la gestión de la movilización de los elementos desde su origen hasta la "mesa" (o el punto de destino final). Las funcionalidades abarcan la asignación de tareas de transporte, el seguimiento en tiempo real del movimiento y la confirmación de la entrega. Es esencial para la logística y el flujo de trabajo del proyecto.
-
-RD-6 MESAS & NOTIFICACIONES
-Esta épica cubre la funcionalidad de las "mesas" (probablemente estaciones de trabajo o puntos de control) y el sistema de notificaciones. Las funcionalidades incluyen la organización de las tareas o pedidos en estas mesas y la configuración de alertas o notificaciones que informan a los usuarios sobre el estado de un pedido, un evento importante o cualquier acción pendiente.
-
-RD-7 PROYECTO DE GRADO – Gestión y Entregables
-Esta épica está dedicada a la organización y gestión del proyecto en sí, con énfasis en los entregables finales. Las funcionalidades incluyen la planificación de hitos, la documentación del proyecto, y la preparación de los materiales necesarios para cumplir con los requisitos del proyecto de grado. Es la épica que asegura que el proyecto se complete de manera exitosa y que toda la documentación necesaria esté en orden.
+## Participantes
+| Nombre                    | Rol en Scrum      | Usuario GitHub                                                                 |
+|---------------------------|-----------------|-------------------------------------------------------------------------------|
+| Victor Andres             | Scrum Master     | [VictorAndres123](https://github.com/VictorAndres123)                         |
+| Johan Esteban Ramirez     | Product Owner    | [EstebanRamirezGutierrez](https://github.com/EstebanRamirezGutierrez)         |
+| Juan Jose Urbano Perdomo  | Development Team | [JuanJoseUrbano](https://github.com/JuanJoseUrbano)                           |
