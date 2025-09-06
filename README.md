@@ -42,11 +42,12 @@ El proyecto se desarrolla bajo **Scrum**, organizado en **épicas** y **sprints 
 - Cada sprint dura **una semana**, permitiendo entregas incrementales.  
 - Las épicas definen los **objetivos principales** del proyecto.  
 - Las historias de usuario (HU) dividen las épicas en funcionalidades manejables.  
-- Cada HU se documenta en este repositorio y se gestiona en **Jira**, asegurando trazabilidad.  <
+- Cada HU se documenta en este repositorio y se gestiona en **Jira**, asegurando trazabilidad.
 
 ### Convención de Historias de Usuario (HU-#)
-- HU-001 en adelante: funcionalidades del sistema para el primer sprint  
-- HU-101 en adelante: funcionalidades avanzadas o ajustes  
+- Corte 1 → HU-101 en adelante
+- Corte 2 → HU-201 en adelante
+- Corte 3 → HU-301 en adelante
 
 Cada HU incluirá:
 
