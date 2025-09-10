@@ -20,22 +20,26 @@ This diagram illustrates the general actions a user can perform within the syste
 
 ### 👨‍💼 Employee
 ![Employee Use Case](./employee.png)
+
 This diagram shows the specific use cases available to an employee.
 
 ---
 
 ### 👑 Administrator
 ![Administrator Use Case](./administrador.png)
+
 This diagram outlines the powerful capabilities of an administrator.
 
 ---
 
 ### 🛍️ Customer
 ![Customer Use Case](./customer.png)
+
 This diagram details the interactions and processes for a customer.
 
 ---
 
 ### 🔔 Notification Service
 ![Notification Service Use Case](./notification%20service.png)
+
 This diagram explains how the notification service works and its interactions.
