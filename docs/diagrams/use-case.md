@@ -13,29 +13,29 @@ Este documento presenta el diagrama de casos de uso para el **Sistema de Gestió
 A continuación, se muestra el diagrama de casos de uso que ilustra las interacciones entre los actores y el sistema.
 
 ### 👤 User
-This diagram illustrates the general actions a user can perform within the system.
 ![User Use Case](./user.png)
+This diagram illustrates the general actions a user can perform within the system.
 
 ---
 
 ### 👨‍💼 Employee
-This diagram shows the specific use cases available to an employee.
 ![Employee Use Case](./employee.png)
+This diagram shows the specific use cases available to an employee.
 
 ---
 
 ### 👑 Administrator
-This diagram outlines the powerful capabilities of an administrator.
 ![Administrator Use Case](./administrador.png)
+This diagram outlines the powerful capabilities of an administrator.
 
 ---
 
 ### 🛍️ Customer
-This diagram details the interactions and processes for a customer.
 ![Customer Use Case](./customer.png)
+This diagram details the interactions and processes for a customer.
 
 ---
 
 ### 🔔 Notification Service
-This diagram explains how the notification service works and its interactions.
 ![Notification Service Use Case](./notification%20service.png)
+This diagram explains how the notification service works and its interactions.
