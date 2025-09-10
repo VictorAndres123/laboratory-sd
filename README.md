@@ -96,6 +96,26 @@ El seguimiento de épicas e historias de usuario se realiza en **Jira** mediante
 Espacio de Jira donde estarán las épicas y los sprints: [Enlace al tablero de Jira](https://solitariodevs.atlassian.net/jira/software/projects/RSO/boards/67/backlog?epics=visible&issueParent=10133%2C10140&atlOrigin=eyJpIjoiYjBhYTY2MTRmOWRiNDdlNTk3ZTdkMTAzMmU4MjMwMjMiLCJwIjoiaiJ9)
 
 ---
+## Mockups  
+
+Los mockups diseñados permiten **visualizar la interacción entre clientes y empleados** dentro del sistema de gestión del restaurante.  
+Estos prototipos ayudan a comprender la experiencia de usuario antes de implementar la interfaz final.  
+
+👉 [Dar click aquí para ver los mockups en Figma](https://www.figma.com/design/IQPDGfwnokc7wHWxzrDgTb/Restaurante_SmashOrder?node-id=5-268&t=KvE2EGwpA9Y5mqFd-1)
+
+### 🎯 Objetivos
+- Representar la **navegación del cliente** al realizar reservas, pedidos y pagos.
+- Garantizar coherencia visual entre todas las pantallas del sistema.
+- Servir como guía para el desarrollo de la capa frontend.
+
+### 📌 Alcance
+- Mockups en **alta fidelidad**, diseñados en Figma.  
+- Incluyen pantallas para **cliente**, **empleado** y **administrador**.  
+- Serán la base para el diseño del frontend en **Vue + Bootstrap**.  
+
+✍️ **Nota:** Los mockups podrán sufrir ajustes en el transcurso del desarrollo según la retroalimentación del equipo y los usuarios finales.
+
+---
 
 ## Repositorios Relacionados
 | Microservicio          | Repositorio                        | Estado       | Descripción                                           |
@@ -103,11 +123,11 @@ Espacio de Jira donde estarán las épicas y los sprints: [Enlace al tablero de 
 | Eureka Server          | [enlace](#)                       | Pendiente    | Registro y descubrimiento de microservicios         |
 | API Gateway            | [enlace](#)                       | Pendiente    | Enrutamiento centralizado y políticas de seguridad  |
 | Auth Service           | [enlace](#)                       | Pendiente    | Autenticación y autorización con JWT/OAuth2         |
-| Product Service        | [enlace](#)                       | En proceso   | Gestión del catálogo de productos                   |
-| Order Service          | [enlace](#)                       | En proceso   | Creación, seguimiento y actualización de pedidos   |
+| Product Service        | [enlace](#)                       | Pendiente   | Gestión del catálogo de productos                   |
+| Order Service          | [enlace](#)                       | Pendiente   | Creación, seguimiento y actualización de pedidos   |
 | Notification Service   | [enlace](#)                       | Pendiente    | Envío de alertas y notificaciones a clientes       |
 | Table Service          | [enlace](#)                       | Pendiente    | Gestión de mesas y estado de ocupación              |
-| Frontend Web           | [enlace](#)                       | Pendiente    | Interfaz gráfica del sistema                        |
+| Backend Inicial           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | Crud inical del sistema de restaurante           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | Interfaz gráfica del sistema                      |
 
 ---
 
