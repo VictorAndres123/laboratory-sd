@@ -14,6 +14,7 @@ A continuación, se muestra el diagrama de casos de uso que ilustra las interacc
 
 ### 👤 User
 ![User Use Case](./user.png)
+
 This diagram illustrates the general actions a user can perform within the system.
 
 ---
