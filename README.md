@@ -127,7 +127,8 @@ Estos prototipos ayudan a comprender la experiencia de usuario antes de implemen
 | Order Service          | [enlace](#)                       | Pendiente   | Creación, seguimiento y actualización de pedidos   |
 | Notification Service   | [enlace](#)                       | Pendiente    | Envío de alertas y notificaciones a clientes       |
 | Table Service          | [enlace](#)                       | Pendiente    | Gestión de mesas y estado de ocupación              |
-| Backend Inicial           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | Crud inical del sistema de restaurante           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | Interfaz gráfica del sistema                      |
+| Backend Inicial           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | entidades en Java según el modelo de datos para estructurar la información de forma clara   
+| Frontend Web           | [enlace](https://github.com/JuanJoseUrbano/frontend-restaurante-smash_order)                       | En proceso    | Interfaz gráfica del sistema                      |
 
 ---
 
