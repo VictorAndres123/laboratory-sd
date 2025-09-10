@@ -10,11 +10,9 @@ Este repositorio centraliza la visión    general del sistema, su arquitectura d
 ## Objetivo del Proyecto
 Desarrollar un sistema que permita gestionar de manera eficiente la operación de un restaurante de comidas rápidas, incluyendo:
 
-- Registro y autenticación de usuarios con distintos roles (Administrador, Empleado, Cliente).  
-- Gestión del **catálogo de productos** del restaurante.  
-- Creación y seguimiento de **pedidos** realizados por clientes.  
-- Notificaciones automáticas a los clientes cuando su pedido esté listo.  
-- Administración de mesas y control de pedidos en curso.  
+- Gestión de pedidos con seguimiento y notificaciones en tiempo real.  
+- Administración del catálogo de productos y de las mesas del restaurante.  
+- Registro y autenticación de usuarios con roles definidos (Admin, Empleado, Cliente).  
 
 El sistema busca ofrecer:
 
