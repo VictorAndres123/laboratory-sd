@@ -1,4 +1,4 @@
-# 📌 Épica 5: Seguridad y autenticación
+# 📌 Épica 4: Seguridad y autenticación
 
 ## 📝 Descripción
 Se desarrolla el **Auth Service** utilizando **Spring Security y JWT**, integrado al **API Gateway**, para garantizar un sistema seguro de autenticación y autorización.  
@@ -19,3 +19,7 @@ Se implementan **roles diferenciados** para clientes, empleados y administradore
 - **HU-214:** Como cliente, **quiero mantener mi sesión activa en el frontend después de iniciar sesión**, para no tener que autenticarme en cada acción.  
 - **HU-215:** Como empleado, **quiero acceder a un panel en el frontend**, para gestionar productos, pedidos y mesas según mis permisos.  
 - **HU-216:** Como QA, **quiero validar flujos completos de login, roles y acceso a vistas**, para garantizar la seguridad y correcto funcionamiento del sistema.
+- **HU-217:** Como usuario, quiero acceder a una vista donde pueda visualizar y editar mi información personal, para mantener mis datos actualizados dentro del sistema y garantizar que mi perfil refleje información correcta.
+
+## Ajustes durante el spring
+- **CHU-201:** Como usuario del sistema, quiero disponer de endpoints que devuelvan el número de registros de cada tabla, para visualizar estadísticas generales en el dashboard y obtener una visión rápida del estado de la base de datos.
